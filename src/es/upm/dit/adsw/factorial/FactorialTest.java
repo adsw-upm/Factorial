@@ -25,7 +25,7 @@ public class FactorialTest {
      */
     @Test
     public void test00() {
-        assertEquals(1, F.f(0));
+        assertEquals(1, F.factorial(0));
     }
 
     /**
@@ -33,7 +33,7 @@ public class FactorialTest {
      */
     @Test
     public void test01() {
-        assertEquals(1, F.f(1));
+        assertEquals(1, F.factorial(1));
     }
 
     /**
@@ -41,7 +41,7 @@ public class FactorialTest {
      */
     @Test
     public void test05() {
-        assertEquals(120, F.f(5));
+        assertEquals(120, F.factorial(5));
     }
 
     /**
@@ -49,7 +49,7 @@ public class FactorialTest {
      */
     @Test(expected = IllegalArgumentException.class)
     public void test11() {
-        F.f(-1);
+        F.factorial(-1);
         fail("Debería haber saltado una excepción - no se puede calcular el factorial de un número negativo");
     }
 }

@@ -14,6 +14,6 @@ public interface Factorial {
      * @return n!
      * @throws IllegalArgumentException si n es negativo
      */
-    public long f(int n);
+    public long factorial(int n);
 
 }

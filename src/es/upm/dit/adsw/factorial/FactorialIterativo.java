@@ -14,7 +14,8 @@ public class FactorialIterativo implements Factorial {
      * @return n!
      * @throws IllegalArgumentException si n es negativo
      */
-    public long f(int n) {
+    @Override
+    public long factorial(int n) {
         if (n < 0)
             throw new IllegalArgumentException();
 
